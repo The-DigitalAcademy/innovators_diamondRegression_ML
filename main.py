@@ -18,7 +18,7 @@ df1 = np.log(df1)
 model = LinearRegression()
 X = df1.drop(['price','y','z'], axis=1)
 y = df1['price']
-X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2, random_state=0)
+X_train, X_test, y_train, y_test = train_test_split(X,y,test_size=0.2, random_state=49)
 model.fit(X_train,y_train)
 
 @app.route('/')
@@ -39,7 +39,7 @@ def predict():
         kurt = df1['price'].kurt()
 
         # Return the prediction to the user
-        return render_template('results.html', prediction=prediction[0],y_train=y_train,r2 = r2,skew = skew, kurt = kurt)
+        return render_template('results.html', prediction=prediction[0],r2 = r2,skew = skew, kurt = kurt)
 
 if __name__ == '__main__':
     app.run(debug=True)

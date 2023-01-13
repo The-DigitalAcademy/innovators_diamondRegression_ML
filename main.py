@@ -29,11 +29,12 @@ def index():
 def predict():
     if request.method == 'POST':
         # Get the user input from the form
-        input_data = [float(request.form['carat']), float(request.form['depth']), float(request.form['table']), float(request.form['x'])]
-        
+        input_data = np.array([float(request.form['carat']), float(request.form['depth']), float(request.form['table']), float(request.form['x'])])
+        input_data = np.log(input_data)
         # Use the model to make a prediction
         prediction = model.predict([input_data])
         prediction = np.exp(prediction)
+        
         r2 = r2_score(y_train, model.predict(X_train))
         skew = df1['price'].skew()
         kurt = df1['price'].kurt()

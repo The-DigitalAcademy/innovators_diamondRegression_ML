@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multilinear Regression</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Multilinear Regression</h1>
+    <form method="post" action="{{ url_for('predict') }}">
+        <label for="carat">carat</label>
+        <input type="text" id="carat" name="carat">
+        <br>
+        <label for="x">x</label>
+        <input type="text" id="x" name="x">
+        <br>
+        <label for="y">y</label>
+        <input type="text" id="y" name="y">
+        <br>
+        <label for="z">z:</label>
+        <input type="text" id="z" name="z">
+        <br>
+        <input type="submit" value="Predict">
+        <br>
+    </form>      
+  </div>
+</body>
+</html>
+

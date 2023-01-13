@@ -7,8 +7,10 @@ import pandas as pd
 app = Flask(__name__)
 
 # Load the Linear Regression mode
-df1 = pd.read_csv('diamonds.csv')
-
+df = pd.read_csv('diamonds.csv')
+df = df[(df.z != 0) & (df.x != 0) & (df.y != 0)]
+df1 = df[df.y < 30 ]
+df1 = df1[df1.z < 30 ]
 df1 = df1.drop(['Unnamed: 0','color','cut','clarity'],axis=1)
 
 model = LinearRegression()

@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Multilinear Regression</title>
-  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+  <link rel="stylesheet" type="text/css" href="static/style.css">
 </head>
 <body>
   <div class="container">
@@ -11,14 +11,14 @@
         <label for="carat">carat</label>
         <input type="text" id="carat" name="carat">
         <br>
+        <label for="depth">depth</label>
+        <input type="text" id="depth" name="depth">
+        <br>
+        <label for="table">table</label>
+        <input type="text" id="table" name="table">
+        <br>
         <label for="x">x</label>
         <input type="text" id="x" name="x">
-        <br>
-        <label for="y">y</label>
-        <input type="text" id="y" name="y">
-        <br>
-        <label for="z">z:</label>
-        <input type="text" id="z" name="z">
         <br>
         <input type="submit" value="Predict">
         <br>

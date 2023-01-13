@@ -35,6 +35,7 @@ def predict():
         prediction = model.predict([input_data])
         prediction = np.exp(prediction)
         
+        
         r2 = r2_score(y_train, model.predict(X_train))
         skew = df1['price'].skew()
         kurt = df1['price'].kurt()

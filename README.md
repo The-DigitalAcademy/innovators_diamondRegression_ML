@@ -1,12 +1,12 @@
 # innovators_diamondRegression_ML
-##Table of contents 
-###General info 
+## Table of contents 
+### General info 
 
-#####Diamond Price Preditor 
+##### Diamond Price Preditor 
 
 A Multiple linear regression model that was made with sci-kit learn library to predict the price of a diamond using multple features , the model has a dashboard in which users can enter specifications of the diamond and it predicts the price.
 
-#####Technologies used 
+##### Technologies used 
 
 Python 
 
@@ -22,11 +22,11 @@ regression.ipynb - Notebook that shows all the analysis and feature selection
 
 main.py - Dashboard
 
-####Project Status 
+#### Project Status 
 
 Not completed
 
-####Acknowledgements 
+#### Acknowledgements 
 Gudani
 John
 Paballo

@@ -1,5 +1,7 @@
 # innovators_diamondRegression_ML
+
 ## Table of contents 
+
 ### General info 
 
 ##### Diamond Price Preditor 

@@ -1,9 +1,7 @@
 from flask import Flask, render_template, request
-from sklearn.metrics import r2_score, mean_squared_error
 import numpy as np
 import joblib as jb
-from sklearn.model_selection import train_test_split
-import pandas as pd
+
 
 app = Flask(__name__)
 filename = "Diamond_model.joblib"

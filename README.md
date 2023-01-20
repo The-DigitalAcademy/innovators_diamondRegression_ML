@@ -14,7 +14,9 @@ Python
 
 Sci-kit Learn(Machine Learning)
 
-Flask
+Flask(Dashboard)
+
+SAS (Analysis)
 
 ## Features 
 
@@ -26,7 +28,7 @@ main.py - Dashboard
 
 ## Project Status 
 
-Not completed
+Completed
 
 ## Acknowledgements 
 

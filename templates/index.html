@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Diamond Price Predictor</title>
+  <link rel="stylesheet" type="text/css" href="static/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Diamond Price Predictor</h1>
+    <form method="post" action="{{ url_for('predict') }}">
+        <label for="carat">carat</label>
+        <input type="text" id="carat" name="carat">
+        <br>
+        <label for="depth">depth</label>
+        <input type="text" id="depth" name="depth">
+        <br>
+        <label for="table">table</label>
+        <input type="text" id="table" name="table">
+        <br>
+        <label for="x">x</label>
+        <input type="text" id="x" name="x">
+        <br>
+        <input type="submit" value="Predict">
+        <br>
+    </form>      
+  </div>
+</body>
+</html>
+
